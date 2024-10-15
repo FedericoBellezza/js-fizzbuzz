@@ -30,4 +30,8 @@ for (i = 1; i < repetitionsNumber + 1; i++) {
 	}
 
 	console.log(printNumber);
+	document.getElementById('paragraph').innerHTML += `${i}) <u><i>${printNumber}<i><u> <br>`;
 }
+
+// ^ AGGIUNGO LA VISUALIZZAZIONE SU PAGINA
+let paragraphElement = document.getElementById('paragraph');
