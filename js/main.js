@@ -15,6 +15,8 @@ let printNumber;
 
 // STAMPO I NUMERI DA 1 A 100
 for (i = 1; i < repetitionsNumber + 1; i++) {
+	printNumber = i;
+
 	// ^ PER I NUMERI MULTIPLI DI 5 e 3 IMPOSTO "FizzBuzz" COME OUTPUT
 	if (i % 3 === 0 && i % 5 === 0) {
 		printNumber = 'FizzBuzz';
@@ -25,8 +27,6 @@ for (i = 1; i < repetitionsNumber + 1; i++) {
 	} else if (i % 5 === 0) {
 		printNumber = 'Buzz';
 		// ^ PER I NUMERI NON DI 5 O DI 3 IMPOSTO IL NUMERO COME OUTPUT
-	} else {
-		printNumber = i;
 	}
 
 	console.log(printNumber);
